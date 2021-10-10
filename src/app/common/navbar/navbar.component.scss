@@ -1,0 +1,43 @@
+@import "/src/styles/variables.scss";
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  &__list {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    padding: 14px;
+    margin: 0;
+    font-family: myarabicfont;
+  }
+  &__item {
+    padding-right: 35px;
+    position: relative;
+    color: $white;
+    cursor: pointer;
+    font-weight: 400;
+
+    &.active {
+      background: linear-gradient(to left, $primary, $dark-primary);
+      background-clip: text;
+      color: transparent;
+      font-weight: bold;
+    }
+
+    & .pipeline {
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      right: 15px;
+      top: 0;
+      background-color: $white;
+    }
+  }
+}

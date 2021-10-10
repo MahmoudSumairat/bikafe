@@ -1,0 +1,122 @@
+@import "/src/styles/variables.scss";
+
+.contact {
+  min-height: 100vh;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: linear-gradient(to left, $primary, $dark-primary);
+
+  &__navbar {
+    background-color: #1d1d1b;
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+  }
+
+  h2 {
+    color: white;
+    font-size: 50px;
+  }
+
+  &__chat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2 {
+      unicode-bidi: bidi-override !important;
+      direction: unset !important;
+      text-align: right;
+
+      span {
+        font-weight: 700;
+        display: inline-block;
+      }
+    }
+
+    button {
+      background-color: $white;
+      padding: 15px 70px;
+      display: inline-block;
+      border-radius: 40px 0 40px 40px;
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #575756;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    button {
+      background-color: $white;
+      padding: 15px 70px;
+      display: inline-block;
+      border-radius: 0 40px 40px 40px;
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #575756;
+    }
+  }
+
+  &__line {
+    height: 250px;
+    width: 1px;
+    border-right: 1px solid $white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    justify-content: center;
+  }
+
+  &__input {
+    background: none;
+    background-color: transparent;
+    border: 2px solid $white;
+    width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    color: $white;
+
+    &::placeholder {
+      color: rgba($white, 0.6);
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:active {
+      outline: 0;
+    }
+  }
+
+  &__form-button {
+    background-color: $white;
+    padding: 15px 70px;
+    display: inline-block;
+    border-radius: 40px 0 40px 40px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #575756;
+  }
+}

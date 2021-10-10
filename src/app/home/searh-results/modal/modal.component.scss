@@ -1,0 +1,64 @@
+@import "/src/styles/variables.scss";
+
+.info-modal {
+  height: 350px;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to left, $primary, $dark-primary);
+
+  h4 {
+    color: $white;
+    line-height: 1.6;
+
+    font-size: 16px;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 35px;
+    unicode-bidi: bidi-override !important;
+    direction: unset !important;
+    text-align: right;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  &__chevron {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 35px 0px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+
+  &__list {
+    margin: 0 0px 0 -15px;
+    font-size: 16px;
+    unicode-bidi: bidi-override !important;
+    direction: unset !important;
+    text-align: right;
+    margin-right: 20px;
+    line-height: 1.6;
+  }
+
+  &__img {
+    height: 280px;
+    width: 280px;
+  }
+
+  &__save {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 10px;
+    color: $white;
+    font-size: 18px;
+    top: 10px;
+    cursor: pointer;
+  }
+}

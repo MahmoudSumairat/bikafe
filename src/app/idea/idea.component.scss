@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+.idea {
+  height: 100vh;
+  background: url(../../assets/images/background.png);
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 60px;
+  padding-top: 150px;
+
+  &__main-img {
+    height: 100vh;
+  }
+
+  &__description {
+    color: $white;
+    unicode-bidi: bidi-override !important;
+    direction: unset !important;
+    text-align: right;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+
+  &__heading {
+    color: transparent;
+    background: linear-gradient(to left, $primary, $dark-primary);
+    background-clip: text;
+    font-weight: bold;
+    unicode-bidi: bidi-override !important;
+    direction: unset !important;
+    text-align: right;
+  }
+
+  &__button {
+    background: linear-gradient(to left, $primary, $dark-primary);
+    color: $white;
+    margin-bottom: 80px;
+    border-radius: 20px;
+    padding: 0px 30px;
+
+    img {
+      height: 30px;
+      width: 30px;
+      transform: rotateZ(90deg);
+    }
+  }
+}

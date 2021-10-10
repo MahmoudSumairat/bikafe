@@ -1,0 +1,58 @@
+@import "/src/styles/variables.scss";
+
+.search-result {
+  list-style: none;
+  font-weight: 600;
+  display: flex;
+  background-color: transparent;
+  font-family: boldfont;
+  border-bottom: 2px solid;
+  justify-content: center;
+  width: 82%;
+  color: $white;
+  margin: 20px 0;
+  padding-bottom: 20px;
+
+  &__year {
+    color: $white;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  &__item {
+    padding: 0px 18px;
+    position: relative;
+    font-weight: 500;
+    flex-grow: 1;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__pipeline {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    top: 5px;
+    background-color: $white;
+  }
+
+  &__arrow {
+    cursor: pointer;
+    width: 25px;
+    transform: rotateZ(90deg);
+  }
+}

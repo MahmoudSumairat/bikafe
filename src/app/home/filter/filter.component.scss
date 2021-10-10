@@ -1,0 +1,36 @@
+@import "/src/styles/variables.scss";
+
+.input {
+  padding: 14px;
+  background: linear-gradient(to left, $primary, $dark-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -30px;
+
+  &__style {
+    padding: 9px 38px;
+    margin: 0px 15px 0px 20px;
+    width: auto;
+    border: 1px;
+    color: rgba(0, 0, 0, 0.5);
+    direction: rtl;
+  }
+
+  &__search {
+    padding: 0px;
+    margin-left: 35px;
+    color: whitesmoke;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 10px;
+    }
+
+    img {
+      width: 40px;
+    }
+  }
+}

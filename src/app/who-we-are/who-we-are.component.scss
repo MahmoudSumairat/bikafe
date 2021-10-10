@@ -1,0 +1,103 @@
+@import "/src/styles/variables.scss";
+
+.who {
+  &__intro {
+    display: flex;
+    padding-top: 90px;
+    box-shadow: 0 15px 20px rgba($black, 0.9);
+    position: relative;
+    z-index: 99;
+  }
+
+  &__navbar {
+    background-color: #1d1d1b;
+    position: absolute;
+    height: 90px;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: linear-gradient(-135deg, $primary, $dark-primary);
+    unicode-bidi: bidi-override !important;
+    direction: unset !important;
+    text-align: right;
+    color: $white;
+    padding: 30px;
+
+    p {
+      font-size: 17px;
+    }
+  }
+
+  &__img {
+    width: 50%;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__more {
+    position: absolute;
+    background-color: $black;
+    color: $white;
+    border-radius: 20px;
+    padding: 4px 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 999;
+
+    img {
+      height: 20px;
+      transform: rotateZ(90deg);
+    }
+  }
+
+  &__description {
+    background: linear-gradient(to top, #e2e0e0, lighten(#e2e0e0, 100));
+    padding: 40px;
+    padding-top: 80px;
+
+    &-container {
+      width: 75%;
+      margin: auto;
+    }
+  }
+
+  &__data {
+    display: flex;
+    align-items: flex-start;
+    unicode-bidi: bidi-override !important;
+    direction: unset !important;
+    text-align: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &-title {
+      width: 10%;
+      font-size: 38px;
+    }
+    &-description {
+      margin: 0;
+      width: 80%;
+      font-size: 20px;
+    }
+
+    &-separator {
+      display: block;
+      width: 60%;
+      margin: auto;
+      height: 1px;
+      border-bottom: 1px solid #1d1d1b;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import "/src/styles/variables.scss";
+
+.footer {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(to left, $primary, $dark-primary);
+  &__container {
+    width: 82%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo-img {
+    width: 200px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 17%;
+  }
+
+  &__nav {
+    width: 17%;
+    unicode-bidi: bidi-override !important;
+    direction: unset !important;
+    text-align: right;
+  }
+
+  &__social-heading {
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    color: $white;
+  }
+
+  &__social-item {
+    background-color: $black;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 64%;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__main-line {
+    height: 80px;
+    margin: 0 20px;
+    width: 1px;
+    background-color: $white;
+  }
+
+  &__copy-english,
+  &__copy-arabic {
+    color: $white;
+    margin: 10px 0;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__nav-item {
+    color: $white;
+    cursor: pointer;
+  }
+
+  &__main-title {
+    margin: 0;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: bahji-solid;
+    color: $white;
+  }
+}

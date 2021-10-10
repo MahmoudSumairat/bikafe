@@ -1,0 +1,49 @@
+<footer class="footer">
+  <div class="footer__container">
+    <ul class="footer__nav">
+      <li
+        class="footer__nav-item"
+        [routerLink]="nav.route"
+        *ngFor="let nav of navItems"
+      >
+        {{ nav.title }}
+      </li>
+    </ul>
+    <div class="footer__main">
+      <div class="footer__logo">
+        <h3 class="footer__main-title">بكفي</h3>
+        <span class="footer__main-line"></span>
+        <img
+          class="footer__logo-img"
+          src="../../../assets/icons/wavo logo.svg"
+        />
+      </div>
+      <div class="footer__copy-rights">
+        <p class="footer__copy-english">
+          2021- جميع المعلومات، حقوق الطبع والنشر والملكية الفكرية محفوظة لدى
+          مالك المشروع - جمعية نساء ضد العنف للعام 2022 ©
+        </p>
+        <p class="footer__copy-arabic">
+          All information, copyright and intellectual property rights reserved
+          to the project owner - Women Against Violence Association for the year
+          2021-2022 ©
+        </p>
+      </div>
+    </div>
+    <ul class="footer__social">
+      <p class="footer__social-heading">تابعونا على مواقع التواصل الاجتماعي</p>
+      <li class="footer__social-item">
+        <img src="../../../assets/icons/youtube.svg" />
+      </li>
+      <li class="footer__social-item">
+        <img src="../../../assets/icons/twitter.svg" />
+      </li>
+      <li class="footer__social-item">
+        <img src="../../../assets/icons/insta.svg" />
+      </li>
+      <li class="footer__social-item">
+        <img src="../../../assets/icons/facebook.svg" />
+      </li>
+    </ul>
+  </div>
+</footer>
