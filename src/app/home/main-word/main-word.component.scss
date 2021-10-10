@@ -15,7 +15,7 @@
     cursor: pointer;
     position: absolute;
     bottom: 5%;
-    margin-top: 40px;
+    margin-top: 4rem;
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.2s ease-in-out;
@@ -26,6 +26,16 @@
 
     &:hover svg {
       transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .main-word {
+    &__arrow {
+      svg {
+        height: 2rem;
+      }
     }
   }
 }

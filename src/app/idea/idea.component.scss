@@ -7,8 +7,8 @@
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 60px;
-  padding-top: 150px;
+  padding: 0 6rem;
+  padding-top: 1.5rem;
 
   &__main-img {
     height: 100vh;
@@ -20,7 +20,7 @@
     direction: unset !important;
     text-align: right;
     line-height: 1.8;
-    font-size: 17px;
+    font-size: 1.7rem;
   }
 
   &__heading {
@@ -36,14 +36,44 @@
   &__button {
     background: linear-gradient(to left, $primary, $dark-primary);
     color: $white;
-    margin-bottom: 80px;
-    border-radius: 20px;
-    padding: 0px 30px;
+    margin-bottom: 8rem;
+    border-radius: 2rem;
+    padding: 0px 3rem;
 
     img {
-      height: 30px;
-      width: 30px;
+      height: 3rem;
+      width: 3rem;
       transform: rotateZ(90deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .idea {
+    flex-direction: column;
+    min-height: 146vh;
+    padding-top: 9rem;
+    &__main-img {
+      height: 78vh;
+    }
+
+    &__description {
+      font-size: 0.8rem;
+    }
+
+    &__heading {
+      font-size: 1.6rem;
+    }
+
+    &__button {
+      font-size: 1rem;
+      margin-top: 2rem;
+      padding: 0.5rem 3rem;
+
+      img {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
     }
   }
 }

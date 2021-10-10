@@ -177,4 +177,8 @@ export class StatisticsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  getWidthFactor = () => {
+    return window.innerWidth < 768 ? 17 : 50;
+  };
 }

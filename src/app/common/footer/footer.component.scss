@@ -3,7 +3,7 @@
 .footer {
   position: absolute;
   width: 100%;
-  padding: 20px 0;
+  padding: 2rem 0;
   background: linear-gradient(to left, $primary, $dark-primary);
   &__container {
     width: 82%;
@@ -13,7 +13,7 @@
     justify-content: space-between;
   }
   &__logo-img {
-    width: 200px;
+    width: 20rem;
   }
 
   &__social {
@@ -34,15 +34,15 @@
   &__social-heading {
     text-align: center;
     width: 100%;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: bold;
     color: $white;
   }
 
   &__social-item {
     background-color: $black;
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +64,8 @@
   }
 
   &__main-line {
-    height: 80px;
-    margin: 0 20px;
+    height: 8rem;
+    margin: 0 2rem;
     width: 1px;
     background-color: $white;
   }
@@ -73,8 +73,8 @@
   &__copy-english,
   &__copy-arabic {
     color: $white;
-    margin: 10px 0;
-    font-size: 12px;
+    margin: 1rem 0;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
   }
@@ -86,9 +86,53 @@
 
   &__main-title {
     margin: 0;
-    font-size: 80px;
+    font-size: 8rem;
     font-weight: bold;
     font-family: bahji-solid;
     color: $white;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .footer {
+    &__logo-img {
+      width: 10rem;
+    }
+
+    &__main-title {
+      font-size: 3rem;
+    }
+
+    &__main-line {
+      height: 4rem;
+    }
+
+    &__copy-english,
+    &__copy-arabic {
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+
+    &__social-heading {
+      font-size: 0.7rem;
+    }
+
+    &__nav-item {
+      font-size: 0.9rem;
+    }
+
+    &__social-item {
+      height: 1.5rem;
+      width: 1.5rem;
+
+      img {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
+    &__container {
+      width: 95%;
+    }
   }
 }

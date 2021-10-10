@@ -5,6 +5,16 @@ html {
   direction: rtl;
 }
 
+html {
+  font-size: 62.5%; // 10px
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -29,4 +39,4 @@ button {
 }
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";

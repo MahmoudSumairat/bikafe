@@ -3,8 +3,8 @@
 .who {
   &__intro {
     display: flex;
-    padding-top: 90px;
-    box-shadow: 0 15px 20px rgba($black, 0.9);
+    padding-top: 9rem;
+    box-shadow: 0 1.5rem 2rem rgba($black, 0.9);
     position: relative;
     z-index: 99;
   }
@@ -12,7 +12,7 @@
   &__navbar {
     background-color: #1d1d1b;
     position: absolute;
-    height: 90px;
+    height: 9rem;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,10 +28,10 @@
     direction: unset !important;
     text-align: right;
     color: $white;
-    padding: 30px;
+    padding: 3rem;
 
     p {
-      font-size: 17px;
+      font-size: 1.7rem;
     }
   }
 
@@ -47,23 +47,23 @@
     position: absolute;
     background-color: $black;
     color: $white;
-    border-radius: 20px;
-    padding: 4px 20px;
+    border-radius: 2rem;
+    padding: 0.4rem 2rem;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
     z-index: 999;
 
     img {
-      height: 20px;
+      height: 2rem;
       transform: rotateZ(90deg);
     }
   }
 
   &__description {
     background: linear-gradient(to top, #e2e0e0, lighten(#e2e0e0, 100));
-    padding: 40px;
-    padding-top: 80px;
+    padding: 4rem;
+    padding-top: 8rem;
 
     &-container {
       width: 75%;
@@ -82,12 +82,12 @@
 
     &-title {
       width: 10%;
-      font-size: 38px;
+      font-size: 3.8rem;
     }
     &-description {
       margin: 0;
       width: 80%;
-      font-size: 20px;
+      font-size: 2rem;
     }
 
     &-separator {
@@ -96,8 +96,63 @@
       margin: auto;
       height: 1px;
       border-bottom: 1px solid #1d1d1b;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .who {
+    &__intro {
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__info {
+      width: 100%;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+
+    &__more {
+      font-size: 1rem;
+
+      img {
+        height: 1.5rem;
+        transform: rotateZ(90deg);
+      }
+    }
+
+    &__data {
+      &-title {
+        font-size: 1.2rem;
+      }
+      &-description {
+        margin: 0;
+        width: 80%;
+        font-size: 0.8rem;
+      }
+
+      &-separator {
+        display: block;
+        width: 60%;
+        margin: auto;
+        height: 1px;
+        border-bottom: 1px solid #1d1d1b;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
     }
   }
 }

@@ -10,22 +10,22 @@
   justify-content: center;
   width: 82%;
   color: $white;
-  margin: 20px 0;
-  padding-bottom: 20px;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
 
   &__year {
     color: $white;
-    font-size: 26px;
-    margin-top: 10px;
-    margin-left: 20px;
+    font-size: 2.6rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
   }
 
   &__item {
-    padding: 0px 18px;
+    padding: 0px 1.8rem;
     position: relative;
     font-weight: 500;
     flex-grow: 1;
-    font-size: 16px;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     height: 100%;
@@ -46,13 +46,57 @@
     width: 2px;
     height: 100%;
     left: 0px;
-    top: 5px;
+    top: 0.5rem;
     background-color: $white;
   }
 
   &__arrow {
     cursor: pointer;
-    width: 25px;
+    width: 2.5rem;
     transform: rotateZ(90deg);
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .search-result {
+    width: 100%;
+    align-items: center;
+
+    &__year {
+      color: $white;
+      font-size: 1.2rem;
+      margin-top: 0;
+      margin-left: 0.5rem;
+    }
+
+    &__item {
+      padding: 0px 1rem;
+      position: relative;
+      flex-grow: 1;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      &:last-child {
+        padding-right: 0px;
+      }
+    }
+
+    &__pipeline {
+      position: absolute;
+      width: 1px;
+      height: 4rem;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $white;
+    }
+
+    &__arrow {
+      cursor: pointer;
+      width: 1.4rem;
+      transform: rotateZ(90deg);
+    }
   }
 }

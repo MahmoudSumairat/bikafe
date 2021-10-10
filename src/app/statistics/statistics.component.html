@@ -188,7 +188,7 @@
     <span class="stats__relations-title">{{ relationChart.title }}</span>
     <div
       [ngClass]="{ 'bg-white': i >= 10 }"
-      [ngStyle]="{ width: relationChart.perc * 50 + 'px' }"
+      [ngStyle]="{ width: relationChart.perc * getWidthFactor() + 'px' }"
       class="stats__relations-chart bg-{{ i + 1 }} "
     >
       <span> {{ relationChart.perc + "%" }} </span>

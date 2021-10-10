@@ -1,16 +1,16 @@
 @import "/src/styles/variables.scss";
 
 .input {
-  padding: 14px;
+  padding: 1.4rem;
   background: linear-gradient(to left, $primary, $dark-primary);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 -30px;
+  margin: 0 -3rem;
 
   &__style {
-    padding: 9px 38px;
-    margin: 0px 15px 0px 20px;
+    padding: 0.9rem 3.8rem;
+    margin: 0px 1.5rem 0px 2rem;
     width: auto;
     border: 1px;
     color: rgba(0, 0, 0, 0.5);
@@ -19,18 +19,50 @@
 
   &__search {
     padding: 0px;
-    margin-left: 35px;
+    margin-left: 3.5rem;
     color: whitesmoke;
     font-weight: 600;
     display: flex;
     align-items: center;
 
     span {
-      margin-right: 10px;
+      margin-right: 1rem;
     }
 
     img {
-      width: 40px;
+      width: 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .input {
+    padding: 0.6rem;
+    margin: 0 -3rem;
+
+    &__style {
+      padding: 0;
+      margin: 0.5rem;
+      max-width: 5rem !important;
+      font-size: 1rem;
+    }
+
+    &__search {
+      padding: 0px;
+      margin-left: 0px;
+      color: whitesmoke;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-right: 1rem;
+        font-size: 1rem;
+      }
+
+      img {
+        width: 4rem;
+      }
     }
   }
 }
