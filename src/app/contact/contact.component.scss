@@ -121,7 +121,7 @@
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 768px) {
   .contact {
     &__heading {
       width: 90%;
@@ -158,6 +158,63 @@
       background-color: $white;
       padding: 1rem 2rem;
       font-size: 1.2rem;
+      border-radius: 1rem 0 1rem 1rem;
+    }
+
+    &__line {
+      height: 4rem;
+      width: 1px;
+      border-right: 1px solid $white;
+      position: absolute;
+      left: 50%;
+      bottom: -0.8rem;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .contact {
+    padding-top: 14rem;
+    &__heading {
+      width: 90%;
+      justify-content: center;
+    }
+
+    &__navbar {
+      height: 14rem;
+    }
+
+    h2 {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    &__chat {
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1.8rem;
+      }
+    }
+
+    &__phone {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1.8rem;
+      }
+    }
+
+    &__input {
+      width: 90%;
+    }
+
+    &__form-button {
+      background-color: $white;
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
       border-radius: 1rem 0 1rem 1rem;
     }
 

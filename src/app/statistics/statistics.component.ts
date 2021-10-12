@@ -179,6 +179,6 @@ export class StatisticsComponent implements OnInit {
   ngOnInit(): void {}
 
   getWidthFactor = () => {
-    return window.innerWidth < 768 ? 17 : 50;
+    return window.innerWidth < 992 ? (window.innerWidth < 768 ? 17 : 35) : 50;
   };
 }

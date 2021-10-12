@@ -93,7 +93,7 @@
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 768px) {
   .footer {
     &__logo-img {
       width: 10rem;
@@ -128,6 +128,50 @@
       img {
         height: 1.5rem;
         width: 1.5rem;
+      }
+    }
+
+    &__container {
+      width: 95%;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .footer {
+    &__logo-img {
+      width: 12rem;
+    }
+
+    &__main-title {
+      font-size: 5rem;
+    }
+
+    &__main-line {
+      height: 6rem;
+    }
+
+    &__copy-english,
+    &__copy-arabic {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    &__social-heading {
+      font-size: 0.9rem;
+    }
+
+    &__nav-item {
+      font-size: 1.1rem;
+    }
+
+    &__social-item {
+      height: 1.7rem;
+      width: 1.7rem;
+
+      img {
+        height: 1.7rem;
+        width: 1.7rem;
       }
     }
 

@@ -48,7 +48,7 @@
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 768px) {
   .idea {
     flex-direction: column;
     min-height: 146vh;
@@ -73,6 +73,36 @@
       img {
         height: 1.5rem;
         width: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .idea {
+    flex-direction: column;
+    min-height: 186vh;
+    padding-top: 18rem;
+    &__main-img {
+      height: 107vh;
+    }
+
+    &__description {
+      font-size: 1.1rem;
+    }
+
+    &__heading {
+      font-size: 1.8rem;
+    }
+
+    &__button {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      padding: 0.5rem 3rem;
+
+      img {
+        height: 1.8rem;
+        width: 1.8rem;
       }
     }
   }
